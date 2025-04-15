@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add Link to Collection</h1>
+    <form id="linkForm">
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" id="title" name="title" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="source">Source URL</label>
+        <input type="url" id="source" name="source" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="key_text">Key Text</label>
+        <textarea id="key_text" name="key_text"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="why_interesting">Why Interesting</label>
+        <textarea id="why_interesting" name="why_interesting"></textarea>
+      </div>
+      
+      <div class="form-group">
+        <label for="screenshot">Screenshot Filename</label>
+        <input type="text" id="screenshot" name="screenshot">
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" id="submitBtn">Add Link</button>
+      </div>
+      
+      <div id="status"></div>
+    </form>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
