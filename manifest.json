@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Linkfest Extension",
+    "version": "1.0",
+    "description": "Add interesting links to your weblog's links.json file",
+    "permissions": [
+      "activeTab",
+      "http://127.0.0.1:8000/"
+    ],
+    "browser_action": {
+      "default_title": "Linkfest",
+      "default_popup": "popup/popup.html"
+    }
+  }
